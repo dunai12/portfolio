@@ -1,0 +1,23 @@
+extends ../_template
+include ../sections/head
+include ../sections/footer
+include ../blocks/hero
+include ../blocks/title
+include ../blocks/aside
+include ../blocks/svg_image
+
+block content
+    +head()
+        +hero(common.hero)
+    section.blog
+        +svg_image("/assets/img/sprite.svg#icons--blog_header").blog__bg
+        .blog__aside
+            +aside(blog.asideItems, 1)
+        .blog__content
+            article.post
+                h2.post__title
+                |
+                .post__date
+                |
+                .post__content
+    +footer(2)

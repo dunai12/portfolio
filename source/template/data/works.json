@@ -1,0 +1,33 @@
+{
+    "comments": [
+        {
+            "img": "",
+            "text": "",
+            "name": "",
+            "position": ""
+        },
+        {
+            "img": "",
+            "text": "",
+            "name": "",
+            "position": ""
+        }
+    ],
+    "titles": {
+        "works": {
+            "text": "Мои работы",
+            "bg": "works_header"
+        },
+        "talks": {
+            "text": "Что обо мне говорят",
+            "bg": "about_header"
+        },
+        "contacts": {"text": "Связаться со мной"}
+    },
+    "slider": [
+        {
+            "text": "сайт",
+            "sliderSkills": "html, css"
+        }
+    ]
+}

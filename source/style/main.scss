@@ -1,0 +1,20 @@
+//variables
+@import "./vars";
+
+//layout setups
+@import "./layout/setups";
+@import "./layout/fonts";
+
+//mixins
+@import "./helpers/mixins";
+
+//blocks
+@import "./blocks/socials.scss";
+@import "./blocks/btn.scss";
+@import "./blocks/aside.scss";
+@import "./blocks/chart.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/svg_image.scss";
+@import "./blocks/title.scss";
+@import "./blocks/hero.scss";
+

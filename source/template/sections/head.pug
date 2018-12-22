@@ -1,0 +1,16 @@
+include ../blocks/socials
+include ../blocks/svg_image
+
+mixin head()
+    section.head
+        +svg_image("./assets/img/sprite.svg#icons--portfolio_header").head__title
+        .head__top
+            .head__socials
+                +socials(common.socials, false, 'green')
+            .head__burger-wrap
+                +svg_image("./assets/img/sprite.svg#icons--hamburger").head__burger
+        .head__content
+            if block
+                block
+        +svg_image("./assets/img/sprite.svg#icons--arrow_down").head__arrow
+

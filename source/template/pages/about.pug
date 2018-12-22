@@ -1,0 +1,50 @@
+extends ../_template
+include ../sections/head
+include ../sections/footer
+include ../blocks/hero
+include ../blocks/title
+include ../blocks/chart
+include ../blocks/svg_image
+
+block content
+    +head()
+        +hero(common.hero)
+    section.about
+        .about__left
+            +svg_image("").triangle.triangle_feel_white
+            |
+            +title(about.titles.about).about__section-title
+            |
+            .user-about
+                img(src= common.hero.avatar).user-about__picture
+                |
+                +title(about.titles.whoIAm).user-about__title
+                |
+                p.user-about__description
+                    = about.description
+        .about__right
+            +svg_image("").triangle_feel_beige
+            .user-about
+                +title(about.titles.canHelp).user-about__title
+                |
+                p.user-about__description
+                    = about.skillsDescription
+            .skills
+                each skill in about.skills
+                    .skills__section
+                        .skills__title= skill.skillName
+                        |
+                        each skillTitle in skill.skillList
+                            +chart(skillTitle)
+    section.about__map
+        .map
+        .contacts
+            +title(about.titles.contacts)
+            |
+            ul.contacts__list
+                each contact in about.contacts
+                    li.contacts__item
+                        +svg_image(`/assets/img/sprite.svg#icons--${contact.icon}`)
+                        .contacts__text= contact.text
+    footer.about__footer
+        +footer(1, "transparent")

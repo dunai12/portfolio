@@ -1,0 +1,6 @@
+
+mixin title(title)
+    .title
+        if title.bg
+            +svg_image(`./assets/img/sprite.svg#icons--${title.bg}`).title__bg
+        .title__text= title.text

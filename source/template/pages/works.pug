@@ -1,0 +1,63 @@
+extends ../_template
+include ../sections/head
+include ../sections/footer
+include ../blocks/hero
+include ../blocks/title
+include ../blocks/btn
+include ../blocks/slider
+include ../blocks/svg_image
+
+block content
+    +head()
+        +hero(common.hero)
+    +svg_image("/assets/img/sprite.svg#icons--work_header").works__bg
+    |
+    section.works
+        +title(works.titles.works)
+        section.works__left
+            .work-info
+                +title(works.titles.contacts).work-info__title
+                .work-info__technology
+                    =worms
+                +btn("Посмотреть сайт").work-info__btn
+        section.works__right
+            +slider(works.slider)
+    section.talks
+        +title(works.titles.talks).talks__title
+        |
+        .talks__comments
+            each comment in works.comments
+                .comment
+                    .comment__picture-wrapper
+                        img(src= comment.img).comment__picture
+                    .comment__text
+                        =comment.text
+                    |
+                    .comment__author
+                        =comment.name
+                    |
+                    .comment__subauthor
+                        =comment.position
+        .contact-form
+            +title(works.titles.contacts)
+            form.contact-form__form
+                input(
+                    name="name"
+                    type="text"
+                    class="contact-form__input"
+                )
+                input(
+                    name="email"
+                    type="email"
+                    class="contact-form__input"
+                )
+                textarea(
+                    name="message",
+                    cols="30", 
+                    rows="10"
+                    class="contact-form__textarea"
+                )
+                +btn("Отправить").contact-form__button
+                +btn("Очистить").contact-form__button
+    +footer(0, "transparent")
+

@@ -1,0 +1,27 @@
+include ../blocks/socials
+mixin footer(navActive = 0, style)
+    .footer(class=`footer${style ? ' footer_'+ style : ''}`)
+        .footer__top
+            .footer__top-section
+                .footer__text= common.footer.description
+            .footer__top-section
+                ul.inline-nav
+                    each item, index in common.footer.nav
+                        li(
+                            class=`
+                                inline-nav__link 
+                                ${navActive == index ? ' inline-nav__link_active' : ''}
+                            `
+                        )
+                            a(
+                                class='inline-nav__link'
+                                href=item.link
+                            )= item.text
+                +socials(common.socials)
+            .footer__top-section
+                .quote
+                    .qoute__text= common.footer.quote.text
+                    |
+                    .quote__author= common.footer.quote.author
+        .footer__bottom
+            .copyright= common.footer.copyright

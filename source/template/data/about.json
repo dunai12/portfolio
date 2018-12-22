@@ -1,0 +1,52 @@
+{
+    "title": "Заголовок",
+    "skills": [
+        {
+            "skillName": "Frontend",
+            "skillList": [
+                {"percent": 10, "name": "HTML5"},
+                {"percent": 20, "name": "CSS3"},
+                {"percent": 30, "name": "JS"}
+            ]
+        },
+        {
+            "skillName": "Backend",
+            "skillList": [
+                {"percent": 10, "name": "PHP"},
+                {"percent": 20, "name": "NodeJS"},
+                {"percent": 30, "name": "Mongo.db"}
+            ]
+        },
+        {
+            "skillName": "WorkFlow",
+            "skillList": [
+                {"percent": 10, "name": "Git"},
+                {"percent": 20, "name": "Gulp"},
+                {"percent": 30, "name": "Webpack"}
+            ]
+        }
+    ],
+    "description": "Я веб разработчик из Ивантеевка (Московская область). Мне 24 года. Я занимаюсь разработской современных сайтов и приложений. Мне нравиться делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут все классно и красиво.",
+    "skillsDescription": "Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend, но давайте по порядку.",
+    "contacts": [
+        {"name": "Skipe", "icon": "skipe", "text": "dunai12345"},
+        {"name": "E-mail", "icon": "envelope", "text": "dunai12@mail.ru"},
+        {"name": "Phone", "icon": "phone", "text": "+7(977)997-14-51"},
+        {"name": "Address", "icon": "map_marker", "text": "М.О. г. Ивантеевка, ул. Пионерская, д.11"}
+    ],
+    "titles": {
+        "about": {
+            "text": "Обо мне",
+            "bg": "about_header"
+        },
+        "whoIAm": {
+            "text": "Кто я"
+        },
+        "canHelp": {
+            "text": "Чем я могу быть вам полезен"
+        },
+        "contacts": {
+            "text": "Контакты"
+        }
+    }
+}
