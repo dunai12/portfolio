@@ -1,0 +1,18 @@
+.chart{
+    width: 110px;
+    position: relative;
+}
+.chart__circle{
+    width: 100%;
+    fill: transparent;
+    stroke: $accentColor;
+    stroke-width: 20px;
+}
+.chart__name{
+    font-weight: 500;
+    color: $accentColor;
+    @include centered;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}

@@ -1,0 +1,32 @@
+.about{
+    display: flex;
+}
+.about__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 100px;
+    position: relative;
+    padding-bottom: 25px;
+    &_bg_beige{
+        background-color: #ebefe2;
+    }
+    &_bg_white{
+        background-color: #f4f5f0;
+    }
+}
+.about__section-container{
+    &_left{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    &_right{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+.about__section-title{
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}

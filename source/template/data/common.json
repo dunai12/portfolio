@@ -2,7 +2,7 @@
     "hero": {
         "name": "Дунай Александр",
         "description": "Личный сайт web-разработчика",
-        "avatar": "assets/img/avatar.png"
+        "avatar": "assets/img/ava.jpeg"
     },
     "socials": [
         {"name": "vk", "link": "#"},

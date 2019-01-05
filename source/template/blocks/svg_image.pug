@@ -1,3 +1,7 @@
-mixin svg_image(link)
-    svg.head__burger
-        use(xlink:href= link)
+mixin svg_image(icon, classList, options = {})
+    svg(class= classList ? classList : ""
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox= options.viewBox || "0 0 100 100"
+        preserveAspectRatio= options.ratio || "meet"
+    )
+        use(xlink:href= `./assets/img/sprite.svg#icons--${icon}`)

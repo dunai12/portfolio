@@ -10,41 +10,48 @@ block content
     +head()
         +hero(common.hero)
     section.about
-        .about__left
-            +svg_image("").triangle.triangle_feel_white
-            |
-            +title(about.titles.about).about__section-title
-            |
-            .user-about
-                img(src= common.hero.avatar).user-about__picture
+        .about__section.about__section_bg_beige
+            .about__section-container.about__section-container_left
+                +svg_image("about_bg_left", "triangle triangle_feel_beige", {viewBox: "0 0 601 105"})
                 |
-                +title(about.titles.whoIAm).user-about__title
+                +title(about.titles.about, {
+                        mainClass: "about__section-title", 
+                        text: "title__text_fz_63"
+                    })
                 |
-                p.user-about__description
-                    = about.description
-        .about__right
-            +svg_image("").triangle_feel_beige
-            .user-about
-                +title(about.titles.canHelp).user-about__title
-                |
-                p.user-about__description
-                    = about.skillsDescription
-            .skills
-                each skill in about.skills
-                    .skills__section
-                        .skills__title= skill.skillName
-                        |
-                        each skillTitle in skill.skillList
-                            +chart(skillTitle)
+                .user-about
+                    .user-about__picture-wrapper
+                        img(src= common.hero.avatar).user-about__picture
+                    |
+                    +title(about.titles.whoIAm, {mainClass: "user-about__title"})
+                    |
+                    p.user-about__description
+                        = about.description
+        .about__section.about__section_bg_white
+            .about__section-container.about__section-container_right
+                +svg_image("about_bg_right", "triangle triangle_feel_white", {viewBox: "0 0 601 105"})
+                .user-about.user-about_right
+                    +title(about.titles.canHelp, {mainClass: "user-about__title"})
+                    |
+                    p.user-about__description
+                        = about.skillsDescription
+                .skills
+                    each skill in about.skills
+                        .skills__section
+                            .skills__title= skill.skillName
+                            |
+                            .skills__charts
+                                each skillTitle in skill.skillList
+                                    +chart(skillTitle, "skills__skill")
     section.about__map
         .map
         .contacts
-            +title(about.titles.contacts)
+            +title(about.titles.contacts, "contacts__title")
             |
             ul.contacts__list
                 each contact in about.contacts
                     li.contacts__item
-                        +svg_image(`/assets/img/sprite.svg#icons--${contact.icon}`)
+                        +svg_image(contact.icon)
                         .contacts__text= contact.text
     footer.about__footer
         +footer(1, "transparent")

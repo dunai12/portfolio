@@ -1,0 +1,30 @@
+.title{
+    position: relative;
+    display: inline-block;
+}
+.title__bg{
+    @include centered;
+    fill: rgba(147, 192, 46, 0.1);
+}
+.title__text{
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+    padding: 25px 60px;
+    font-size: 35px;
+    color: $titleFontColor;
+    display: inline-block;
+    text-transform: uppercase;
+    &_fz_63{
+        font-size: 63px;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        width: 90px;
+        height: 3px;
+        background-color: $titleFontColor;
+        @include centered("x");
+        bottom: 0;
+    }
+}

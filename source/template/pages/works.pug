@@ -10,20 +10,20 @@ include ../blocks/svg_image
 block content
     +head()
         +hero(common.hero)
-    +svg_image("/assets/img/sprite.svg#icons--work_header").works__bg
+    +svg_image("work_header", "works__bg")
     |
     section.works
-        +title(works.titles.works)
+        +title(works.titles.works, "works__title")
         section.works__left
             .work-info
-                +title(works.titles.contacts).work-info__title
+                +title(works.titles.contacts,"work-info__title")
                 .work-info__technology
                     =worms
                 +btn("Посмотреть сайт").work-info__btn
         section.works__right
             +slider(works.slider)
     section.talks
-        +title(works.titles.talks).talks__title
+        +title(works.titles.talks, "talks__title")
         |
         .talks__comments
             each comment in works.comments
@@ -39,7 +39,7 @@ block content
                     .comment__subauthor
                         =comment.position
         .contact-form
-            +title(works.titles.contacts)
+            +title(works.titles.contacts, "contact-form__title")
             form.contact-form__form
                 input(
                     name="name"

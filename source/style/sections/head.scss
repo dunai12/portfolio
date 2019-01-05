@@ -1,0 +1,48 @@
+.head{
+    background-image: url("/assets/img/water.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;   
+    position: relative;
+}
+.head__title{
+    position: absolute;
+    @include centered;
+    // height: 313px;
+    margin-top: -28px;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    fill: rgba(255,255,255, 0.2);
+}
+.head__top{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 0;
+    margin-bottom: 80px;
+}
+.head__burger{
+    cursor: pointer;
+    height: 35px;
+    fill: #fff;
+    transition: fill 0.2s;
+    &:hover{
+        fill: $accentColor;
+    }
+}
+.head__content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 134px;
+}
+.head__arrow-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.head__arrow{
+    width: 26px;
+    fill: rgba(255,255,255, 0.7);
+    cursor: pointer;
+    margin-bottom: 70px;
+}

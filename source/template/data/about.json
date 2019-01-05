@@ -6,7 +6,9 @@
             "skillList": [
                 {"percent": 10, "name": "HTML5"},
                 {"percent": 20, "name": "CSS3"},
-                {"percent": 30, "name": "JS"}
+                {"percent": 30, "name": "JS"},
+                {"percent": 30, "name": "React.js"},
+                {"percent": 30, "name": "Vue.js"}
             ]
         },
         {

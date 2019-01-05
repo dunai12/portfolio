@@ -1,6 +1,9 @@
 //variables
 @import "./vars";
 
+//sprite
+@import "./common/sprite";
+
 //layout setups
 @import "./layout/setups";
 @import "./layout/fonts";
@@ -8,13 +11,26 @@
 //mixins
 @import "./helpers/mixins";
 
+//pages
+@import "./pages/about";
+@import "./pages/blog";
+@import "./pages/welcome";
+@import "./pages/works";
+
+//sections
+@import "./sections/footer";
+@import "./sections/head";
+
 //blocks
-@import "./blocks/socials.scss";
-@import "./blocks/btn.scss";
-@import "./blocks/aside.scss";
-@import "./blocks/chart.scss";
-@import "./blocks/slider.scss";
-@import "./blocks/svg_image.scss";
-@import "./blocks/title.scss";
-@import "./blocks/hero.scss";
+@import "./blocks/socials";
+@import "./blocks/btn";
+@import "./blocks/aside";
+@import "./blocks/chart";
+@import "./blocks/slider";
+@import "./blocks/svg_image";
+@import "./blocks/title";
+@import "./blocks/hero";
+@import "./blocks/triangle";
+@import "./blocks/user-about";
+@import "./blocks/skills";
 

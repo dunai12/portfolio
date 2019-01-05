@@ -3,14 +3,15 @@ include ../blocks/svg_image
 
 mixin head()
     section.head
-        +svg_image("./assets/img/sprite.svg#icons--portfolio_header").head__title
+        +svg_image("portfolio_header", "head__title", {viewBox: "0 0 1175.495 313.961"})
         .head__top
             .head__socials
                 +socials(common.socials, false, 'green')
             .head__burger-wrap
-                +svg_image("./assets/img/sprite.svg#icons--hamburger").head__burger
+                +svg_image("hamburger", "head__burger")
         .head__content
             if block
                 block
-        +svg_image("./assets/img/sprite.svg#icons--arrow_down").head__arrow
+        .head__arrow-wrapper
+            +svg_image("arrow_down", "head__arrow", {viewBox: "0 0 25.18 16.164"})
 

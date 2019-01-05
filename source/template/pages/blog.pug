@@ -10,7 +10,7 @@ block content
     +head()
         +hero(common.hero)
     section.blog
-        +svg_image("/assets/img/sprite.svg#icons--blog_header").blog__bg
+        +svg_image("blog_header", "blog__bg")
         .blog__aside
             +aside(blog.asideItems, 1)
         .blog__content

@@ -4,8 +4,8 @@ mixin socials(items, round, color)
     ul.socials
         each item in items
             li.socials__item
-                a(href= item.link, class= socials__link)
+                a(href= item.link, class= "socials__link")
                     -
-                        let className = `socials__icon${color ? ' socials__icon' + color : ''}`;
-                        let imageLink = `/assets/img/sprite.svg#icons--${round ? item.name + '_round' : item.name}`;
-                    +svg_image(imageLink)(class= className)
+                        let className = `socials__icon${color ? ' socials__icon_' + color : ''}`;
+                        let icon = round ? item.name + '_round' : item.name;
+                    +svg_image(icon, className)
