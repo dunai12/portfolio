@@ -1,16 +1,16 @@
 {
     "comments": [
         {
-            "img": "",
-            "text": "",
-            "name": "",
-            "position": ""
+            "img": "http://lorempixel.com/output/cats-q-c-100-100-3.jpg",
+            "text": "Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!",
+            "name": "Кисуня",
+            "position": "Почетный гражданин нашего двора"
         },
         {
-            "img": "",
-            "text": "",
-            "name": "",
-            "position": ""
+            "img": "http://lorempixel.com/output/cats-q-c-100-100-2.jpg",
+            "text": "Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!",
+            "name": "Киса",
+            "position": "проказник по жизни"
         }
     ],
     "titles": {
@@ -27,7 +27,7 @@
     "slider": [
         {
             "text": "сайт",
-            "sliderSkills": "html, css"
+            "skills": "html, css"
         }
     ]
 }

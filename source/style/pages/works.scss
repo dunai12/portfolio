@@ -1,0 +1,44 @@
+.works{
+    position: relative;
+    background: #f4f5f0;
+}
+.works__triangles{
+    display: flex;
+}
+.works__triangle{
+    position: relative;
+    flex: 1 1 100px;
+}
+.works__title{
+    text-align: center;
+    background-color: #f4f5f0;
+    padding: 38px 0;
+    margin-bottom: 30px;
+}
+.works__talks{
+    background-image: url("/assets/img/works_bg.png");
+}
+.works__talks-title{
+    max-width: 550px;
+    margin: 0 auto 30px;
+}
+.works__comments{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 65px;
+}
+.works__comment{
+    margin-right: 25px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.works__arrow-up{
+    width: 100%;
+    text-align: center;
+    padding: 70px 0 255px;
+}
+.works__contact-form{
+    display: flex;
+    justify-content: center;
+}

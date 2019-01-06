@@ -1,20 +1,21 @@
 extends ../_template
-include ../blocks/btn
 include ../blocks/hero
 include ../blocks/socials
 
 block content
     .welcome
         .welcome__top
-            +btn("Авторизоваться").welcome__top-button
+            button.btn.btn_white.btn_transparent.btn_round= "Авторизоваться"
         .welcome__main
-            +hero(common.hero).welcome__hero
-            +socials(common.socials)
+            .welcome__main-content
+                +hero(common.hero, "welcome__main-hero").welcome__hero
+                +socials(common.socials)
             ul.welcome-nav
                 each item in welcome.nav
-                    li.welcome-nav__item
-                        a.welcome-nav__link(href= item.link)
-                        |   item.text
+                    li.welcome-nav__item.btn.btn_square
+                        a(class= "welcome-nav__link"
+                          href= item.link
+                        )= item.text
         .welcome__bottom
-            .welcome__copyright
+            .copyright
                 =common.footer.copyright

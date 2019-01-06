@@ -1,0 +1,47 @@
+.welcome{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    background-image: url("/assets/img/water.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+.welcome__top{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.welcome__main{
+    display: inline-block;
+    align-self: center;
+    background-color: rgba(18, 38, 32, 0.6);
+}
+.welcome__main-hero{
+    margin-bottom: 40px;
+}
+.welcome__main-content{
+    text-align: center;
+    padding: 40px 65px;
+}
+.welcome__bottom{
+    bottom: 0;
+    text-align: center;
+    margin: 40px 0;
+}
+.welcome-nav{
+    display: flex;
+}
+.welcome-nav__item{
+    flex: 1 1 auto;
+}
+.welcome-nav__link{
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -5,18 +5,22 @@
 .title__bg{
     @include centered;
     fill: rgba(147, 192, 46, 0.1);
+    &_about{
+        margin-top: -15px;
+    }
 }
 .title__text{
     position: relative;
     text-align: center;
     font-weight: 500;
-    padding: 25px 60px;
+    padding: 25px 15px;
     font-size: 35px;
     color: $titleFontColor;
     display: inline-block;
     text-transform: uppercase;
     &_fz_63{
         font-size: 63px;
+        line-height: 66px;
     }
     &:after{
         content: "";

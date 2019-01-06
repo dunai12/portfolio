@@ -1,9 +1,9 @@
 include ../blocks/socials
 include ../blocks/svg_image
 
-mixin head()
+mixin head({bg}= {bg: "portfolio_header"})
     section.head
-        +svg_image("portfolio_header", "head__title", {viewBox: "0 0 1175.495 313.961"})
+        +svg_image(bg || "", "head__title", {viewBox: "0 0 1175.495 313.961"})
         .head__top
             .head__socials
                 +socials(common.socials, false, 'green')
@@ -13,5 +13,5 @@ mixin head()
             if block
                 block
         .head__arrow-wrapper
-            +svg_image("arrow_down", "head__arrow", {viewBox: "0 0 25.18 16.164"})
+            +svg_image("arrow_down", "arrow-down head__arrow", {viewBox: "0 0 25.18 16.164"})
 

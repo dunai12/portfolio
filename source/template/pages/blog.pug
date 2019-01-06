@@ -7,7 +7,7 @@ include ../blocks/aside
 include ../blocks/svg_image
 
 block content
-    +head()
+    +head({bg: "blog_header"})
         +hero(common.hero)
     section.blog
         +svg_image("blog_header", "blog__bg")
@@ -20,4 +20,4 @@ block content
                 .post__date
                 |
                 .post__content
-    +footer(2)
+    +footer(0)

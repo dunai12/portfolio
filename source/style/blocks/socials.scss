@@ -14,8 +14,16 @@
 .socials__icon{
     width: 24px;
     fill: #fff;
-    transition: fill 0.2s;
+    transition: all 0.2s;
     &:hover{
         fill: $accentColor;
+    }
+}
+.socials__icon_gray{
+    fill: #fff;
+    opacity: 0.5;
+    &:hover{
+        fill: #fff;
+        opacity: 1;
     }
 }

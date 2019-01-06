@@ -1,0 +1,8 @@
+.arrow-down{
+    width: 26px;
+    fill: rgba(255,255,255, 0.7);
+    cursor: pointer;
+    &_up{
+        transform: rotate(180deg);
+    }
+}

@@ -4,9 +4,20 @@
 }
 .chart__circle{
     width: 100%;
+}
+.chart__bg{
     fill: transparent;
+    stroke-width: 20px;
+    stroke: #dfdcd5;
+}
+.chart__sector{
+    stroke-dasharray: 722;
+    stroke-dashoffset: 361;
     stroke: $accentColor;
     stroke-width: 20px;
+    fill: transparent;
+    transform: rotate(-90 60 60);
+    transition: fill 1s;
 }
 .chart__name{
     font-weight: 500;

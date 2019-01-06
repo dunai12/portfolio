@@ -1,0 +1,12 @@
+.inline-nav{
+    display: flex;
+}
+.inline-nav__item{
+    margin-right: 21px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.inline-nav__link{
+    color: #fff;
+}

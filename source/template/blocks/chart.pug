@@ -1,6 +1,21 @@
 mixin chart(data, modClass)
+    -
+        let dasharray = 2*50*3.1415; 
+        let dashoffset = dasharray - (dasharray / (100/data.percent));
+        let opacity = 1.2/100 * data.percent;
     .chart(class= modClass || '')
         svg(xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 120 120").chart__circle
-            circle(cx="60" cy="60" r="50")
+            viewBox="0 0 120 120")
+            circle(
+                cx="60" cy="60" r="50"
+                class="chart__bg")
+            circle(
+                cx="60" cy="60" r="50"
+                style= {
+                    "stroke-dasharray": dasharray,
+                    "stroke-dashoffset": dashoffset,
+                    opacity: opacity
+                }
+                transform="rotate(-90 60 60)"
+                class="chart__sector")
         .chart__name= data.name

@@ -16,6 +16,7 @@ block content
                 |
                 +title(about.titles.about, {
                         mainClass: "about__section-title", 
+                        bg: "title__bg_about",
                         text: "title__text_fz_63"
                     })
                 |
@@ -31,7 +32,9 @@ block content
             .about__section-container.about__section-container_right
                 +svg_image("about_bg_right", "triangle triangle_feel_white", {viewBox: "0 0 601 105"})
                 .user-about.user-about_right
-                    +title(about.titles.canHelp, {mainClass: "user-about__title"})
+                    +title(about.titles.canHelp, {
+                            mainClass: "user-about__title"
+                        })
                     |
                     p.user-about__description
                         = about.skillsDescription
@@ -44,14 +47,12 @@ block content
                                 each skillTitle in skill.skillList
                                     +chart(skillTitle, "skills__skill")
     section.about__map
-        .map
         .contacts
-            +title(about.titles.contacts, "contacts__title")
+            +title(about.titles.contacts, {mainClass: "contacts__title"})
             |
             ul.contacts__list
                 each contact in about.contacts
                     li.contacts__item
-                        +svg_image(contact.icon)
+                        +svg_image(contact.icon, "contacts__icon")
                         .contacts__text= contact.text
-    footer.about__footer
-        +footer(1, "transparent")
+    +footer(1, "footer_transparent about__footer")

@@ -1,0 +1,36 @@
+.btn{
+    $height: 45;
+    cursor: pointer;
+    display: block;
+    border-radius: 0;
+    background-color: $accentColor;
+    font-size: 16px;
+    height: $height + px;
+    color: #fff;
+    transition: 0.2s;
+    text-decoration: none;
+    &:hover{
+        background-color: $commonColor;
+    }
+    &_square{
+        border-right: 2px solid #dee3e7;
+        opacity: 0.85;
+        &:last-child{
+            border-right: none;
+        }
+    }
+    &_white{
+        background-color: #fff;
+        border-color: #fff;
+    }
+    &_transparent{
+        background-color: transparent;
+    }
+    &_round{
+        border: 2px solid;
+        border-radius: $height/2 + px;
+        padding-right: 28px;
+        padding-left: 28px;
+        &:hover{background-color: $accentColor;}
+    }
+}

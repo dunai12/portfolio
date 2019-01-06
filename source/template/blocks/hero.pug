@@ -1,5 +1,5 @@
-mixin hero(data)
-    .hero
+mixin hero(data, modClass = '')
+    .hero(class= modClass)
         .hero__img-wrapper
             img(src= data.avatar).hero__img
         .hero__title= data.name

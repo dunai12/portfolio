@@ -17,6 +17,10 @@ body {
 	position: relative;
 	overflow: hidden;
 }
+button, input, textarea{
+	margin: 0;
+	border: none;
+}
 
 ul {
 	padding: 0;

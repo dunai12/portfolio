@@ -1,0 +1,30 @@
+.contacts{
+    @include centered;
+    display: inline-block;
+    background-color: rgba(244, 245, 240, 0.85);
+    border-radius: 5px;
+    text-align: center;
+}
+.contacts__title{
+    margin-bottom: 30px;
+}
+.contacts__list{
+    padding: 0 40px 30px;
+}
+.contacts__item{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.contacts__icon{
+    fill: $commonColor;
+    width: 25px;
+    margin-right: 10px;
+}
+.contacts__text{
+    font-size: 16px;
+    font-weight: 500;
+}
